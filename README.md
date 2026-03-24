@@ -14,8 +14,8 @@ After solidifying these fundamentals, I transitioned from structured learning en
 
 ## Professional Portals
 For examples of my current projects, professional UI/UX, and active client work, please refer to:
-- **[Portfolio](https://lspradoo.github.io/)** - Main brand and full project showcase.
-- **[Project Previews](https://lspradoo.github.io/ls-project-previews/)** - Exclusive staging area for active client deployments and progress tracking.
+- **[Portfolio](https://lsprado-dev.github.io/)** - Main brand and full project showcase.
+- **[Project Previews](https://lsprado-dev.github.io/ls-project-previews/)** - Exclusive staging area for active client deployments and progress tracking.
 
 ---
 Maintained by Lucas Prado.
