@@ -54,7 +54,7 @@
         
         h1.dashboard-title { font-size: 2.8rem; margin-bottom: 1rem; color: var(--text-light); margin-top: 0; }
         .purple-text { color: var(--purple-primary); }
-        p.dashboard-subtitle { color: var(--text-gray); font-size: 1.1rem; max-width: 650px; margin: 0 auto; line-height: 1.6; }
+        p.dashboard-subtitle { color: var(--text-gray); font-size: 1.1rem; max-width: 680px; margin: 0 auto; line-height: 1.6; }
 
         .modules-grid {
             display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; width: 100%; max-width: 1000px;
@@ -72,8 +72,18 @@
         .module-desc { color: var(--text-gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; }
         
         .tech-tags { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 2rem; }
-        .tag { background-color: rgba(127, 90, 240, 0.05); color: var(--text-gray); padding: 4px 12px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(127, 90, 240, 0.2); transition: var(--transition); }
+        .tag { 
+            background-color: rgba(127, 90, 240, 0.05); color: var(--text-gray); padding: 6px 14px; 
+            border-radius: 6px; font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(127, 90, 240, 0.2); 
+            transition: var(--transition); display: inline-block; cursor: pointer;
+        }
+        
         .module-card:hover .tag { border-color: var(--purple-primary); color: var(--purple-primary); }
+        
+        .tag:hover { 
+            background-color: var(--purple-primary) !important; color: var(--text-light) !important; 
+            transform: translateY(-3px); box-shadow: 0 4px 10px rgba(127, 90, 240, 0.3); 
+        }
 
         .btn-repo { color: var(--purple-primary); font-weight: 600; font-size: 0.9rem; display: inline-flex; align-items: center; margin-top: auto; }
         .module-card:hover .btn-repo { color: var(--text-light); }
@@ -124,41 +134,47 @@
     <main class="dashboard-main container">
         
         <div class="hero-section">
-            <h1 class="dashboard-title" data-i18n="hero_title">Fundamentos da <span class="purple-text">Web</span></h1>
-            <p class="dashboard-subtitle" data-i18n="hero_subtitle">Arquivo interativo de estudos estruturais, semântica e design.</p>
+            <h1 class="dashboard-title" data-i18n="hero_title">A Base do <span class="purple-text">Código</span></h1>
+            <p class="dashboard-subtitle" data-i18n="hero_subtitle">Arquivo dos meus primeiros estudos durante a transição de carreira. A fundação essencial que construiu minha lógica por trás da web.</p>
         </div>
 
         <div class="modules-grid">
             <article class="module-card">
                 <h3 class="module-title" data-i18n="mod1_title">HTML5 Semântico</h3>
                 <p class="module-desc" data-i18n="mod1_desc">Aplicações práticas de estrutura web, incluindo Ranking de Filmes, Convites de Aniversário e arquitetura multi-páginas.</p>
+                
                 <div class="tech-tags">
-                    <span class="tag">HTML5</span>
-                    <span class="tag">Hierarquia</span>
-                    <span class="tag">Multi-Page</span>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" class="tag">HTML5</a>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Heading_Elements" target="_blank" class="tag">Hierarquia</a>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" target="_blank" class="tag">Multi-Page</a>
                 </div>
+                
                 <a href="https://github.com/lspradoo/web-fundamentals-archive/tree/main/04%20Multi-Page%20Websites" target="_blank" class="btn-repo" data-i18n="btn_code">Ver Código Fonte</a>
             </article>
 
             <article class="module-card">
                 <h3 class="module-title" data-i18n="mod2_title">CSS & Design Base</h3>
                 <p class="module-desc" data-i18n="mod2_desc">Domínio sobre o Box Model e estilização visual. Projetos destacam Memes Motivacionais e Bandeiras em puro CSS.</p>
+                
                 <div class="tech-tags">
-                    <span class="tag">CSS3</span>
-                    <span class="tag">Box Model</span>
-                    <span class="tag">Design Visual</span>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" class="tag">CSS3</a>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_box_model/Introduction_to_the_CSS_box_model" target="_blank" class="tag">Box Model</a>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Layout_cookbook" target="_blank" class="tag">Design Visual</a>
                 </div>
+                
                 <a href="https://github.com/lspradoo/web-fundamentals-archive/tree/main/06%20CSS%20Properties" target="_blank" class="btn-repo" data-i18n="btn_code">Ver Código Fonte</a>
             </article>
 
             <article class="module-card">
                 <h3 class="module-title" data-i18n="mod3_title">Layouts Modernos</h3>
                 <p class="module-desc" data-i18n="mod3_desc">Técnicas sênior de posicionamento e design responsivo com Flexbox e Grid para criar interfaces complexas.</p>
+                
                 <div class="tech-tags">
-                    <span class="tag">Flexbox</span>
-                    <span class="tag">CSS Grid</span>
-                    <span class="tag">Responsivo</span>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank" class="tag">Flexbox</a>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout" target="_blank" class="tag">CSS Grid</a>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" class="tag">Responsivo</a>
                 </div>
+                
                 <a href="https://github.com/lspradoo/web-fundamentals-archive/tree/main/08%20Advanced%20CSS" target="_blank" class="btn-repo" data-i18n="btn_code">Ver Código Fonte</a>
             </article>
 
@@ -184,8 +200,8 @@
             pt: {
                 lang_label: "Idioma:",
                 back_portfolio: "← Lucas Prado | Portfolio",
-                hero_title: "Fundamentos da <span class='purple-text'>Web</span>",
-                hero_subtitle: "Arquivo interativo de estudos estruturais, semântica e design.",
+                hero_title: "A Base do <span class='purple-text'>Código</span>",
+                hero_subtitle: "Arquivo dos meus primeiros estudos durante a transição de carreira. A fundação essencial que construiu minha lógica por trás da web.",
                 mod1_title: "HTML5 Semântico",
                 mod1_desc: "Aplicações práticas de estrutura web, incluindo Ranking de Filmes, Convites de Aniversário e arquitetura multi-páginas.",
                 mod2_title: "CSS & Design Base",
@@ -201,8 +217,8 @@
             en: {
                 lang_label: "Language:",
                 back_portfolio: "← Lucas Prado | Portfolio",
-                hero_title: "Web <span class='purple-text'>Fundamentals</span>",
-                hero_subtitle: "Interactive archive of structural studies, semantics, and design.",
+                hero_title: "The Code <span class='purple-text'>Foundation</span>",
+                hero_subtitle: "An archive of my early studies during my career transition. The essential groundwork that built my logic behind the web.",
                 mod1_title: "Semantic HTML5",
                 mod1_desc: "Practical web structure applications, including Movie Ranking, Birthday Invite, and multi-page projects.",
                 mod2_title: "CSS & Core Design",
@@ -218,8 +234,8 @@
             es: {
                 lang_label: "Idioma:",
                 back_portfolio: "← Lucas Prado | Portfolio",
-                hero_title: "Fundamentos de la <span class='purple-text'>Web</span>",
-                hero_subtitle: "Archivo interactivo de estudios estructurales, semántica y diseño.",
+                hero_title: "La Base del <span class='purple-text'>Código</span>",
+                hero_subtitle: "Archivo de mis primeros estudios durante mi transición de carrera. Los cimientos esenciales que construyeron mi lógica detrás de la web.",
                 mod1_title: "HTML5 Semántico",
                 mod1_desc: "Aplicaciones prácticas de estructura web, incluyendo Ranking de Películas, Invitación de Cumpleaños y proyectos multipágina.",
                 mod2_title: "CSS y Diseño Base",
@@ -235,8 +251,8 @@
             pl: {
                 lang_label: "Język:",
                 back_portfolio: "← Lucas Prado | Portfolio",
-                hero_title: "Podstawy <span class='purple-text'>Web</span>",
-                hero_subtitle: "Interaktywne archiwum studiów strukturalnych, semantyki i designu.",
+                hero_title: "Fundamenty <span class='purple-text'>Kodu</span>",
+                hero_subtitle: "Archiwum moich wczesnych studiów z okresu zmiany branży. Kluczowe podstawy, które ukształtowały moje logiczne myślenie o web developmencie.",
                 mod1_title: "Semantyczny HTML5",
                 mod1_desc: "Praktyczne zastosowania struktury, w tym ranking filmów, zaproszenia i projekty wielostronicowe.",
                 mod2_title: "CSS i Core Design",
